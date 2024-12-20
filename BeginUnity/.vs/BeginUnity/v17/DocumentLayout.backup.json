@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\GitHubLibrary\\CityRoad\\BeginUnity\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8045D3DD-46C3-44E5-83F5-C9AB2D2EA828}|Assembly-CSharp.csproj|d:\\githublibrary\\cityroad\\beginunity\\assets\\scrip\\npccar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8045D3DD-46C3-44E5-83F5-C9AB2D2EA828}|Assembly-CSharp.csproj|solutionrelative:assets\\scrip\\npccar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8045D3DD-46C3-44E5-83F5-C9AB2D2EA828}|Assembly-CSharp.csproj|d:\\githublibrary\\cityroad\\beginunity\\assets\\scrip\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8045D3DD-46C3-44E5-83F5-C9AB2D2EA828}|Assembly-CSharp.csproj|solutionrelative:assets\\scrip\\controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "NPCCar.cs",
+              "DocumentMoniker": "D:\\GitHubLibrary\\CityRoad\\BeginUnity\\Assets\\Scrip\\NPCCar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scrip\\NPCCar.cs",
+              "ToolTip": "D:\\GitHubLibrary\\CityRoad\\BeginUnity\\Assets\\Scrip\\NPCCar.cs*",
+              "RelativeToolTip": "Assets\\Scrip\\NPCCar.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T12:20:53.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Controller.cs",
               "DocumentMoniker": "D:\\GitHubLibrary\\CityRoad\\BeginUnity\\Assets\\Scrip\\Controller.cs",
               "RelativeDocumentMoniker": "Assets\\Scrip\\Controller.cs",
               "ToolTip": "D:\\GitHubLibrary\\CityRoad\\BeginUnity\\Assets\\Scrip\\Controller.cs",
               "RelativeToolTip": "Assets\\Scrip\\Controller.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwFAAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T15:27:41.95Z",
               "EditorCaption": ""
