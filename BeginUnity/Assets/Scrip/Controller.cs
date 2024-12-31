@@ -4,76 +4,25 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
-    [SerializeField]
-    public float Speed = 10000;
-    [SerializeField]
-    public float turnSpeed = 30;
 
-    Rigidbody rb;
-
+    public float movespeed = 10.0f;
+    public float rotatespeed = 45.0f;
+    public Vector3 moveDirection;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*//Set Position
-        Vector3 movement = Vector3.zero;
+        float moveInput = Input.GetAxis("Vertical");
+        float rotateInput = Input.GetAxis("Horizontal");
 
-        if(Input.GetKey(KeyCode.W))
-        {
-            movement += Vector3.forward;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            movement += Vector3.back;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            movement += Vector3.left;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            movement += Vector3.right;
-        }
+        transform.Translate(Vector3.forward * moveInput * movespeed * Time.deltaTime);
 
-        transform.position += movement * Speed * Time.deltaTime;*/
-
-
-        //rigidbody
-        float turnX = 0f;
-        float moveY = 0f;
-
-        if (Input.GetKey(KeyCode.W))
-        {
-            moveY = 1;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            moveY = -1;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            turnX = -1;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            turnX = 1;
-        }
-
-        Vector3 movementVehicle = transform.forward * moveY * Speed * Time.deltaTime;
-
-        rb.AddForce(movementVehicle);
-
-        if(rb.velocity.magnitude > 0.1f)
-        {
-            float turnAngle = turnX * turnSpeed * Time.deltaTime;
-            transform.Rotate(0f, turnAngle, 0f);
-        }
-
+        transform.Rotate(Vector3.up * rotateInput * rotatespeed * Time.deltaTime);
     }
 }

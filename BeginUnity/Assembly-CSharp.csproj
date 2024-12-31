@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scrip\NPCCar.cs" />
     <Compile Include="Assets\Scrip\Controller.cs" />
     <Compile Include="Assets\Animation\Animation_Controller.cs" />
+    <Compile Include="Assets\Scrip\NewBehaviourScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

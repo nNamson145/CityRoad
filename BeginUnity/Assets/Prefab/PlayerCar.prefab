@@ -102,7 +102,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 583fe65bc0ba5da4382624bd00fbc4ac, type: 3}
       propertyPath: m_Name
-      value: Car5A
+      value: PlayerCar
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 583fe65bc0ba5da4382624bd00fbc4ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -161,9 +161,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 583fe65bc0ba5da4382624bd00fbc4ac, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5989959905100238895}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 583fe65bc0ba5da4382624bd00fbc4ac, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 196225311272341114}
     - targetCorrespondingSourceObject: {fileID: 100002, guid: 583fe65bc0ba5da4382624bd00fbc4ac, type: 3}
       insertIndex: -1
@@ -200,33 +197,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 583fe65bc0ba5da4382624bd00fbc4ac, type: 3}
   m_PrefabInstance: {fileID: 6451818298074680774}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &5989959905100238895
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6451818298074647398}
-  serializedVersion: 4
-  m_Mass: 1000
-  m_Drag: 0.1
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 1
 --- !u!114 &196225311272341114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,8 +209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcd13a4cb4869d04aa107a6c48516c96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 800000
-  turnSpeed: 50
+  movespeed: 10
+  rotatespeed: 45
+  moveDirection: {x: 0, y: 0, z: 0}
 --- !u!4 &6451818298074814278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 583fe65bc0ba5da4382624bd00fbc4ac, type: 3}
